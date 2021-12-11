@@ -3,11 +3,6 @@
     "description": "a package for dynamically edit .htaccess in laravel",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Mohammadkhazaee\\LaravelHtaccess\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "mohammadkhazaee",
@@ -15,5 +10,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mohammadkhazaee\\LaravelHtaccess\\"
+            ]
+        }
+    }
 }
