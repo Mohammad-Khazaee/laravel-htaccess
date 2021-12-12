@@ -15,6 +15,7 @@ class CreateUrlTypesTable extends Migration
     {
         Schema::create('url_types', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }

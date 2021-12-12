@@ -15,7 +15,9 @@ class CreateHtaccessUrlsTable extends Migration
     {
         Schema::create('htaccess_urls', function (Blueprint $table) {
             $table->id();
-            $table->text('url');    
+            $table->foreignId('htaccess_id')->constrained();
+            $table->text('url');
+            $table->foreignId('url_type_id')->constrained();
             $table->timestamps();
         });
     }
