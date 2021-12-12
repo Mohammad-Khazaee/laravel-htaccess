@@ -24,6 +24,7 @@ class LaravelHtaccessServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         $this->publishes([
             __DIR__.'/config/htaccess.php' => config_path('htaccess.php'),
         ]);

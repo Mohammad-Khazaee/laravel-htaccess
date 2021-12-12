@@ -12,5 +12,4 @@ return [
     |
     */
 
-    "public_folder" => "public/"
 ];
