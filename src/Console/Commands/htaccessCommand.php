@@ -17,7 +17,7 @@ class htaccessCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return  __DIR__ . '/../../stubs/htaccess.stub';
+        return  __DIR__ . '/../../Stubs/htaccess.stub';
     }
 
     
