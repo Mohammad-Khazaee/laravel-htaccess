@@ -18,4 +18,9 @@ class Htaccess extends Model
         'restored'=>HtaccessEvent::class
     ];
 
+    public function htaccessUrls()
+    {
+        return $this->hasMany(HtaccessUrl::class);
+    }
+
 }

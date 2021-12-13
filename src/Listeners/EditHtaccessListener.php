@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Mohammadkhazaee\LaravelHtaccess\Events\HtaccessEvent;
+use Mohammadkhazaee\LaravelHtaccess\WriteHtaccess;
 
 class EditHtaccessListener implements ShouldQueue
 {
@@ -25,10 +26,8 @@ class EditHtaccessListener implements ShouldQueue
      * @param  \App\Events\HtaccessEvent  $event
      * @return void
      */
-    public function handle(HtaccessEvent $event)
+    public function handle(HtaccessEvent $event,WriteHtaccess $write)
     {
-        sleep(10);
-        echo 'sldjf;asfja;sdlfja;sfasd';
-        
+        $write->write();
     }
 }

@@ -3,6 +3,7 @@
 namespace Mohammadkhazaee\LaravelHtaccess;
 
 use Illuminate\Support\ServiceProvider;
+use Mohammadkhazaee\LaravelHtaccess\Console\Commands\AddDefaultDataToUrlTypeModelCommand;
 use Mohammadkhazaee\LaravelHtaccess\Console\Commands\htaccessCommand;
 use Mohammadkhazaee\LaravelHtaccess\Events\HtaccessEvent;
 use Mohammadkhazaee\LaravelHtaccess\Listeners\EditHtaccessListener;
@@ -40,6 +41,7 @@ class LaravelHtaccessServiceProvider extends ServiceProvider
 
         $this->commands([
             htaccessCommand::class,
+            AddDefaultDataToUrlTypeModelCommand::class
         ]);
     }
 }

@@ -15,7 +15,8 @@ class CreateHtaccessesTable extends Migration
     {
         Schema::create('htaccesses', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('status_code')->default(301);
+            $table->string('name')->nullable();
+            $table->unsignedInteger('status_code')->default(301);
             $table->timestamps();
         });
     }
