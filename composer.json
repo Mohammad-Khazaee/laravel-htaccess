@@ -9,6 +9,11 @@
             "email": "mohammadkhazaei7410@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Mohammadkhazaee\\LaravelHtaccess\\": "src/"
+        }
+    },    
     "minimum-stability": "dev",
     "require": {},
     "extra": {
