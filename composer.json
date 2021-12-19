@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mohammadkhazaee\\LaravelHtaccess\\LaravelHtaccessEventServiceProvider"
+                "Mohammadkhazaee\\LaravelHtaccess\\LaravelHtaccessServiceProvider"
             ]
         }
     }
