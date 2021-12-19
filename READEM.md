@@ -1,3 +1,13 @@
+use RedirectHtaccess Facade
+
+function for add
+RedirectHtaccess()->add();
+return instance of created htaccess
+
+for delete from database
+
+Htaccess()->find($id)->delete();
+
 Important: this feature is available starting from Laravel 5.5. With version 5.4 or below, you must register your facades manually in the aliases section of the config/app.php configuration file.
 
 You can also load an alias from a Service Provider (or anywhere else) by using the AliasLoader singleton class:
