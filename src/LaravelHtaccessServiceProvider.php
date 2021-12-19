@@ -5,8 +5,7 @@ namespace Mohammadkhazaee\LaravelHtaccess;
 use Illuminate\Support\ServiceProvider;
 use Mohammadkhazaee\LaravelHtaccess\Console\Commands\AddDefaultDataToUrlTypeModelCommand;
 use Mohammadkhazaee\LaravelHtaccess\Console\Commands\htaccessCommand;
-use Mohammadkhazaee\LaravelHtaccess\Events\HtaccessEvent;
-use Mohammadkhazaee\LaravelHtaccess\Listeners\EditHtaccessListener;
+use Mohammadkhazaee\LaravelHtaccess\Facades\RedirectHtaccess;
 
 class LaravelHtaccessServiceProvider extends ServiceProvider
 {
@@ -19,6 +18,9 @@ class LaravelHtaccessServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(LaravelHtaccessEventServiceProvider::class);
+        $this->app->bind('redirectHtaccess', function($app) {
+            return new RedirectHtaccess();
+        });      
     }
 
     /**

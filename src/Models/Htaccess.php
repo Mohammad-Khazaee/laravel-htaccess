@@ -10,6 +10,11 @@ class Htaccess extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'status_code'
+    ];
+
     protected $dispatchesEvents = [
         'saved' =>HtaccessEvent::class,
         'updated' =>HtaccessEvent::class,

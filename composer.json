@@ -13,14 +13,17 @@
         "psr-4": {
             "Mohammadkhazaee\\LaravelHtaccess\\": "src/"
         }
-    },    
+    },
     "minimum-stability": "dev",
     "require": {},
     "extra": {
         "laravel": {
             "providers": [
                 "Mohammadkhazaee\\LaravelHtaccess\\LaravelHtaccessServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "RedirectHtaccess": "Mohammadkhazaee\\LaravelHtaccess\\Facades\\RedirectHtaccess"
+            }
         }
     }
 }
